@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>my Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #051b1b;
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 5px;
+            background-color: -webkit-linear-gradient(left, #2c3dd3, #b11dd6);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background-color: #da61ff;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        h1 {
+            text-shadow: 2px 2px 9px #da61ff;
+        }
+        
+        .hello {
+            color: #FFFFFF;
+        }
+        
+        .Hoda {
+            color: #FFFFFF;
+        }
+        
+        header {
+            background-image: url(../img/hero-background.png);
+            background-size: cover;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+        
+        header h1 {
+            color: #FFFFFF;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        
+        header h2 {
+            clear: both;
+            color: #FFFFFF;
+            font-family: 'Source Code Pro', monospace;
+            padding: 10px 10px 10px;
+        }
+        
+        nav {
+            font-size: 1.25em;
+            float: right;
+            padding: 45px;
+        }
+        
+        nav,
+        ul,
+        li {
+            display: inline-block;
+        }
+        
+        hr {
+            font-size: large;
+            color: #da61ff;
+            bottom: 20px;
+        }
+        
+        ul,
+        li,
+        a {
+            color: #da61ff;
+            font-size: 1em;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        .info {
+            color: #FFFFFF;
+        }
+        
+        span {
+            color: #da61ff;
+        }
+        
+        p {
+            color: #FFFFFF;
+        }
+        
+        #about {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #da61ff, 0 6px 20px 0 #8ff9ff;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .track {
+            position: relative;
+            width: 100%;
+        }
+        
+        .row h2 {
+            color: white;
+        }
+        
+        .col-md-5 a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: grey;
+            border-radius: 30px;
+            text-align: center;
+            color: White;
+            margin-top: 30px;
+            font-size: 10px;
+            Transition: 0.3s linear;
+        }
+        
+        .col-md-5 a:hover {
+            background-color: darkgray;
+        }
+        
+        .about-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #da61ff;
+        }
+        
+        .skills h2 {
+            padding-top: 30px;
+        }
+        
+        .skills p {
+            margin-top: 5px;
+            color: #da61ff;
+        }
+        
+        .skills {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #da61ff, 0 6px 20px 0 #70cfc7;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .logo {
+            float: left;
+            padding: 10px;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-left: 100px;
+            transition: 0.6s linear;
+        }
+        
+        hr {
+            color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            background-color: #da61ff;
+            margin-top: 100px;
+            height: 10vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .footer ul {
+            text-align: center;
+            margin-top: 0;
+            display: inline;
+        }
+        
+        .footer ul li {
+            text-align: center;
+            text-align: -webkit-match-parent;
+            font-size: 25px;
+        }
+        
+        .footer ul li a {
+            text-align: center;
+            color: rgb(253, 252, 252);
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        /*--- footer----*/
+        
+        .footer ul li a i:hover {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .socials {
+            background-color: rgba(81, 173, 161, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #da61ff, 0 6px 20px 0 #8ff9ff;
+            margin: 50px;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+        }
+        
+        .socials_Head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .socials_Head img {
+            width: 250px;
+            height: 385px;
+            border-radius: 50%;
+        }
+        
+        .Certificates {
+            box-shadow: 0 4px 8px 0 #da61ff, 0 6px 20px 0 #8ff9ff;
+            border-radius: 100px;
+            padding: 50px;
+            margin-top: 5px;
+            color: #da61ff;
+            margin-right: 50px;
+        }
+        
+        .Certificates h2 {
+            padding-top: 30px;
+        }
+        
+        .about-content p {
+            margin-top: 5px;
+            color: #da61ff;
+        }
+        
+        .about-content h2 {
+            padding-top: 30px;
+        }
+        
+        .border {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        h2 {
+            color: #FFFFFF;
+        }
+        
+        p {
+            color: #da61ff;
+        }
+        
+        .copy {
+            color: #FFFFFF;
+        }
+        
+        .Certificates_img {
+            margin-top: 20px;
+            display: flex;
+        }
+        
+        .Certificates_img img {
+            margin-left: 10px;
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>&lt; Hoda Joseph &verbar; Leader in the innovation club &sol;&gt;</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <section id="welcome-section">
+        <h1>
+            <div class="hello">&nbsp;Hi there! I am</div>
+            <div class="Hoda">&nbsp;Hoda <span class="highlight">&nbsp;Joseph</span></div>
+        </h1>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Hoda Joseph student in NUB university(born in 28 October 2002). Obtained a high school diploma in 2020- egyptian-female- single.
+            </p>
+        </div>
+    </div>
+
+    <section class="content">
+        <div id="skills">
+            <div class="skills">
+                <h2>Skills</h2>
+                <p>designing web pages very good ,I programing the computer in a good way, Securing accounts in a way that makes them impervious to hacking and I can work in the field of accounting </p>
+
+                <ul class="track">
+                    <li>Soft Skills</li><br>
+                    <li>HTML</li><br>
+                    <li>CSS</li><br>
+                    <li>JAVA</li><br>
+                    <li>C#</li><br>
+                    <li>SQL</li><br>
+                    <li>python </li><br>
+                </ul>
+
+                <h2> Basic skills</h2>
+                <p>
+                    I am speaking English good <br> I am Speaking Arabic fluently <br> I am using computer skills very well
+                </p>
+            </div>
+        </div>
+
+        <div id="Certificates">
+            <div class="Certificates">
+
+                <h2>Certificates</h2><br>
+                <div class="Certificates_img">
+
+                    <p> <img target="_blank" src="./WhatsApp Image 2021-07-12 at 10.31.19 PM.jpeg" alt="">
+
+                        <img target="_blank" src="./WhatsApp Image 2021-07-23 at 10.13.57 PM.jpeg" alt="">
+
+                        <img target="_blank" src="./WhatsApp Image 2021-07-23 at 10.19.13 PM.jpeg" alt="">
+
+                        <img target="_blank" src="./WhatsApp Image 2021-07-23 at 10.40.33 PM.jpeg" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <section id="Contact">
+
+            <div class="socials">
+                <div class="socials_Head">
+                    <h2>contact me</h2>
+                    <img src="./WhatsApp Image 2021-07-16 at 8.02.12 PM (2).jpeg" alt="mostafa">
+                </div>
+                <div class="info">
+                    Cairo· Egypt · (+20) 01009947000 ·
+                    <span class="highlight">hodajoseph18@gmail.com</span>
+                </div>
+                <a href="https://www.facebook.com/toty.joo.33/about" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="https://www.instagram.com/hoda_joseph3/" class="fa fa-instagram"></a>
+            </div>
+
+            <div class="footer">
+
+                <ul>
+                    <li>
+
+                        <p class="copy" style="font-size: 20px;">
+                            &copy; Copyright |💛 &nbsp; Hoda &nbsp; 💛&nbsp;
+                        </p>
+
+                    </li>
+
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

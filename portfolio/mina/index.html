@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>my Portfolio</title>
+    <style>
+        body {
+            background: -webkit-linear-gradient(Right, #1bca96, #1d48d6);
+            margin: 0;
+            font-family: var(--Cairo);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 5px;
+            background-color: -webkit-linear-gradient(left, #2c3dd3, #b11dd6);
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: #1100ff;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        h1 {
+            text-shadow: 2px 2px 9px #000000;
+        }
+        
+        .hello {
+            color: #ffffff;
+        }
+        
+        .mina {
+            color: #FFFFFF;
+        }
+        
+        header {
+            background-image: url(../img/hero-background.png);
+            background-size: cover;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+        
+        header h1 {
+            color: #ff0000;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        
+        header h2 {
+            clear: both;
+            color: #ffffff;
+            font-family: 'Source Code Pro', monospace;
+            padding: 10px 10px 10px;
+        }
+        
+        nav {
+            font-size: 1.25em;
+            float: right;
+            padding: 45px;
+        }
+        
+        nav,
+        ul,
+        li {
+            display: inline-block;
+        }
+        
+        hr {
+            font-size: large;
+            color: #000000;
+            bottom: 20px;
+        }
+        
+        ul,
+        li,
+        a {
+            color: #ffffff;
+            font-size: 1em;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        .info {
+            color: #000000;
+        }
+        
+        span {
+            color: #ff0000;
+        }
+        
+        p {
+            color: #912727;
+        }
+        
+        #about {
+            background-color: rgba(0, 0, 0, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff61, 0 6px 20px 0 #00f2ff;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .track {
+            position: relative;
+            width: 100%;
+        }
+        
+        .row h2 {
+            color: rgb(0, 0, 0);
+        }
+        
+        .col-md-5 a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: grey;
+            border-radius: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin-top: 30px;
+            font-size: 10px;
+            Transition: 0.3s linear;
+        }
+        
+        .col-md-5 a:hover {
+            background-color: rgb(0, 0, 0);
+        }
+        
+        .about-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #2600ff;
+        }
+        
+        .skills h2 {
+            padding-top: 30px;
+        }
+        
+        .skills p {
+            margin-top: 5px;
+            color: #000000;
+        }
+        
+        .skills {
+            background-color: rgba(0, 0, 0, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff61, 0 6px 20px 0 #00f2ff;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .logo {
+            float: left;
+            padding: 10px;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-left: 100px;
+            transition: 0.6s linear;
+        }
+        
+        hr {
+            color: rgb(97, 74, 74);
+        }
+        
+        .footer {
+            text-align: center;
+            background-color: #00b1b1;
+            margin-top: 100px;
+            height: 10vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .footer ul {
+            text-align: center;
+            margin-top: 0;
+            display: inline;
+        }
+        
+        .footer ul li {
+            text-align: center;
+            text-align: -webkit-match-parent;
+            font-size: 25px;
+        }
+        
+        .footer ul li a {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        /*--- footer----*/
+        
+        .footer ul li a i:hover {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .socials {
+            background-color: rgba(0, 0, 0, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff61, 0 6px 20px 0 #00f2ff;
+            margin: 50px;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+        }
+        
+        .socials_Head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .socials_Head img {
+            width: 250px;
+            height: 385px;
+            border-radius: 50%;
+        }
+        
+        .Certificates {
+            background-color: rgba(0, 0, 0, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff61, 0 6px 20px 0 #00f2ff;
+            border-radius: 100px;
+            padding: 50px;
+            margin-top: 5px;
+            color: #000000;
+            margin-right: 50px;
+        }
+        
+        .Certificates h2 {
+            padding-top: 30px;
+        }
+        
+        .about-content p {
+            margin-top: 5px;
+            color: #000000;
+        }
+        
+        .about-content h2 {
+            padding-top: 30px;
+        }
+        
+        .border {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        h2 {
+            color: #FFFFFF;
+        }
+        
+        p {
+            color: #000000;
+        }
+        
+        .copy {
+            color: #FFFFFF;
+        }
+        
+        .Certificates_img {
+            margin-top: 20px;
+            display: flex;
+        }
+        
+        .Certificates_img img {
+            margin-left: 10px;
+            width: 300px;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>&lt; Mina Malak &verbar; E-Marketing &sol;&gt;</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#Certificates">Certificates</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <section id="welcome-section">
+        <h1>
+            <div class="hello">&nbsp;Hi there! I am</div>
+            <div class="mina">&nbsp;Mina <span class="highlight">&nbsp;Malak</span></div>
+        </h1>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                mina malak student in NUB university(born in 27 November 2002). Obtained a high school diploma in 2020- egyptian-female- single.
+            </p>
+        </div>
+    </div>
+
+    <section class="content">
+        <div id="skills">
+            <div class="skills">
+                <h2>Skills</h2>
+                <p>designing web pages very good ,I programing the computer in a good way, Securing accounts in a way that makes them impervious to hacking and I can work in the field of accounting </p>
+
+                <ul class="track">
+                    <li>Soft Skills</li><br>
+                    <li>HTML</li><br>
+                    <li>CSS</li><br>
+                    <li>JAVA Script</li><br>
+                    <li>python </li><br>
+                </ul>
+
+                <h2> Basic skills</h2>
+                <p>
+                    I am speaking English good <br> I am Speaking Arabic fluently <br> I am using computer skills very well
+                </p>
+            </div>
+        </div>
+
+        <div id="Certificates">
+            <div class="Certificates">
+
+                <h2>Certificates</h2><br>
+                <div class="Certificates_img">
+
+                    In2021: I got a Certificate in Soft Skills from Bani Swef and Certificate in python
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <footer>
+        <section id="Contact">
+
+            <div class="socials">
+                <div class="socials_Head">
+                    <h2>contact me</h2>
+
+
+                    <img src="./FB_IMG_1626158735968.jpg" alt="mostafa">
+                </div>
+                <p> Bani Souef. EGYPT.(+20)01211019145</P>
+                <a href="https://www.facebook.com/profile.php?id=100053610254311 " class="fa fa-facebook "></a>
+                <a href="انستاجرام " class="fa fa-instagram "></a>
+                <a href="لينك تويتر " class="fa fa-twitter "></a>
+                <a href="يوتيوب " class="fa fa-youtube "></a>
+                <a href="لينكد ان " class="fa fa-linkedin "></a>
+
+            </div>
+
+            <div class="footer">
+
+                <ul>
+                    <li>
+
+                        <p class="copy" style="font-size: 20px;">
+                            &copy; Copyright |💛 &nbsp; Mina &nbsp; 💛&nbsp;
+                        </p>
+
+                    </li>
+
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

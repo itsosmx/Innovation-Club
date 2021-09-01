@@ -1,0 +1,68 @@
+.footer-distributed {
+    background: var(--A-4-Scholar);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+    text-align: left;
+    padding: 55px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer-distributed h3{
+    color: var(--B-4-Scholar);
+
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-left img {
+    width: 300px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+}
+.footer-center div{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.footer-center div i {
+    margin: 0 10px;
+    color: var(--B-4-Scholar)
+}
+.footer-center div a {
+    margin: 0 10px;
+    color: var(--C-4-Scholar)
+}
+
+.footer-right {
+    width: 40%;
+}
+
+.footer-right p{
+    color: var(--C-4-Scholar);
+    line-height: 1.5rem;
+}
+.footer-right p a {
+    color: var(--B-4-Scholar);
+}
+
+.footer-copyrights {
+    position: absolute;
+    color: #fff;
+    opacity: .4;
+    font-size: 1.2rem;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+
+}

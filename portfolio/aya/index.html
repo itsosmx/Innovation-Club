@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>my Portfolio</title>
+    <style>
+        body {
+            background: -webkit-linear-gradient(left, #000000, #2e0752);
+            margin: 0;
+            font-family: var(--Cairo);
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hello {
+            color: #ff00bf;
+        }
+        
+        .Aya {
+            color: #ffffff;
+        }
+        
+        header {
+            background-image: url(../img/hero-background.png);
+            background-size: cover;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+        
+        header h1 {
+            color: #FFFFFF;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        
+        header h2 {
+            clear: both;
+            color: #FFFFFF;
+            font-family: 'Source Code Pro', monospace;
+            padding: 10px 10px 10px;
+        }
+        
+        nav {
+            font-size: 1.25em;
+            float: right;
+            padding: 45px;
+        }
+        
+        nav,
+        ul,
+        li {
+            display: inline-block;
+        }
+        
+        hr {
+            font-size: large;
+            color: #00000094;
+            bottom: 20px;
+        }
+        
+        ul,
+        li,
+        a {
+            color: #ffffff;
+            font-size: 1em;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        .info {
+            color: #ffffff;
+        }
+        
+        span {
+            color: #ff00d4;
+        }
+        
+        p {
+            color: #FFFFFF;
+        }
+        
+        #about {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #1900ff94, 0 6px 20px 0 #ae00ff;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .track {
+            position: relative;
+            width: 100%;
+        }
+        
+        .row h2 {
+            color: rgb(255, 0, 0);
+        }
+        
+        .col-md-5 a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: grey;
+            border-radius: 30px;
+            text-align: center;
+            color: rgb(0, 162, 255);
+            margin-top: 30px;
+            font-size: 10px;
+            Transition: 0.3s linear;
+        }
+        
+        .col-md-5 a:hover {
+            background-color: darkgray;
+        }
+        
+        .about-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .skills h2 {
+            padding-top: 30px;
+        }
+        
+        .skills p {
+            margin-top: 5px;
+            color: rgb(0, 162, 255);
+        }
+        
+        .skills {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #1900ff94, 0 6px 20px 0 #ae00ff;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .logo {
+            float: left;
+            padding: 10px;
+            border: 2px solid #ffffff;
+            border-radius: 20px;
+            margin-top: 30px;
+            margin-left: 100px;
+            transition: 0.6s linear;
+        }
+        
+        hr {
+            color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            color: rgb(0, 162, 255);
+            margin-top: 100px;
+            height: 10vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .footer ul {
+            text-align: center;
+            margin-top: 0;
+            display: inline;
+        }
+        
+        .footer ul li {
+            text-align: center;
+            text-align: -webkit-match-parent;
+            font-size: 25px;
+        }
+        
+        .footer ul li a {
+            text-align: center;
+            color: rgb(253, 252, 252);
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        
+        .track {
+            color: rgb(47, 0, 255);
+        }
+        /*--- footer----*/
+        
+        .footer ul li a i:hover {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .socials {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #1900ff94, 0 6px 20px 0 #ae00ff;
+            margin: 50px;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+        }
+        
+        .socials_Head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .socials_Head img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+        
+        .Objectives {
+            box-shadow: 0 4px 8px 0 #1900ff94, 0 6px 20px 0 #ae00ff;
+            border-radius: 100px;
+            padding: 50px;
+            margin-top: 5px;
+            color: rgb(0, 162, 255);
+            margin-right: 50px;
+        }
+        
+        .Objectives h2 {
+            padding-top: 30px;
+        }
+        
+        .about-content p {
+            margin-top: 5px;
+            color: rgb(0, 162, 255);
+        }
+        
+        .about-content h2 {
+            padding-top: 30px;
+        }
+        
+        .border {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        h2 {
+            color: #FFFFFF;
+        }
+        
+        p {
+            color: rgb(0, 162, 255);
+        }
+        
+        .copy {
+            color: #FFFFFF;
+        }
+        
+        .Certificates_img {
+            margin-top: 20px;
+            display: flex;
+        }
+        
+        .Certificates_img img {
+            margin-left: 10px;
+            width: 250px;
+            height: 250px;
+        }
+        
+        footer {
+            color: rgb(0, 162, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>&lt; Aya Yasser| Leader of innovation club&Artificial Intelligence &sol;&gt;</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#Objectives">Objectives</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <section id="welcome-section">
+        <h1>
+            <div class="hello">&nbsp;Hi there! I am</div>
+            <div class="Aya">&nbsp;Aya <span class="highlight">&nbsp;Yasser</span></div>
+        </h1>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Aya Yasser computer science student at NUB(born 1 January 2002). Obtained a high school diploma in 2020- egyptian-female- single.
+            </p>
+        </div>
+    </div>
+
+    <section class="content">
+        <div id="skills">
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+
+                    <p>Communication<br>Writing Social Media<br>Leadership Creativity<br>Organizational<br>Good in Teamwork<br>Coding with Java<br></p>
+                    <p>HTML<br>CSS<br>JAVA script<br>JAVA</p><br>
+                </ul>
+
+
+                <h2>Language</h2>
+                <p>
+                    Arabic <br> English
+                </p>
+            </div>
+        </div>
+
+        <div id="Objectives">
+            <div class="Objectives">
+
+                <h2>Objectives</h2><br>
+                <P>i look forward to achieving Good things in this club(Innovation Club),like<br>-Gain new knowledge<br>-Gain more skills<br>-Help me to get a good job<br>-learn new different things</P>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <section id="Contact">
+
+            <div class="socials">
+                <div class="socials_Head">
+                    <h2>Contact me </h2>
+                    <img src="./aya.jpeg" alt="aya">
+                </div>
+                <div class="info">
+                    Cairo· Egypt · (+20) 01015288014·
+                    <span class="highlight">yaya67164@gmail.com</span>
+                </div>
+                <a href="https://www.facebook.com/aya.yasser.52493499" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/AyaYass00600104?s=08" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="https://www.instagram.com/aya_yasser_2637/" class="fa fa-instagram"></a>
+            </div>
+
+            <div class="footer">
+
+                <ul>
+                    <li>
+
+                        <p class="copy" style="font-size: 20px;">
+                            &copy; Copyright |💛 &nbsp; aya &nbsp; 💛&nbsp;
+                        </p>
+
+                    </li>
+
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

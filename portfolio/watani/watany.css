@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #b6b6b6;
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(233, 76, 194, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hello {
+    color: #FFFFFF;
+}
+
+.watany {
+    color: #FFFFFF;
+}
+
+header {
+    background-image: url(../img/hero-background.png);
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+header h1 {
+    color: #FFFFFF;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+header h2 {
+    clear: both;
+    color: #FFFFFF;
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px 10px 10px;
+}
+
+nav {
+    font-size: 1.25em;
+    float: right;
+    padding: 45px;
+}
+
+nav,
+ul,
+li {
+    display: inline-block;
+}
+
+hr {
+    font-size: large;
+    color: #E9B44C;
+    bottom: 20px;
+}
+
+ul,
+li,
+a {
+    color: #000000;
+    font-size: 1em;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.info {
+    color: #000000;
+}
+
+span {
+    color: #000000;
+}
+
+p {
+    color: #000000;
+}
+
+#about {
+    background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    display: inline-block;
+    padding: 50px;
+    border-radius: 100px;
+    position: relative;
+    width: 600px
+}
+
+.track {
+    position: relative;
+    width: 100%;
+}
+
+.row h2 {
+    color: white;
+}
+
+.col-md-5 a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    font-size: 10px;
+    Transition: 0.3s linear;
+}
+
+.col-md-5 a:hover {
+    background-color: darkgray;
+}
+
+.about-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.skills h2 {
+    padding-top: 30px;
+}
+
+.skills p {
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.skills {
+    background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    display: inline-block;
+    padding: 50px;
+    border-radius: 100px;
+    position: relative;
+    width: 600px
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    transition: 0.6s linear;
+}
+
+hr {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 100px;
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer ul {
+    text-align: center;
+    margin-top: 0;
+    display: inline;
+}
+
+.footer ul li {
+    text-align: center;
+    text-align: -webkit-match-parent;
+    font-size: 25px;
+}
+
+.footer ul li a {
+    text-align: center;
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+/*--- footer----*/
+
+.footer ul li a i:hover {
+    text-align: center;
+    font-size: 30px;
+}
+
+.socials {
+    background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.socials_Head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials_Head img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.My-Work {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 100px;
+    padding: 50px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+}
+
+.My-Work h2 {
+    padding-top: 30px;
+}
+
+.about-content p {
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.about-content h2 {
+    padding-top: 30px;
+}
+
+.border {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #000000;
+}
+
+.copy {
+    color: #FFFFFF;
+}
+
+.My-Work_img {
+    margin-top: 20px;
+    display: flex;
+}
+
+.My-Work_img img {
+    margin-left: 10px;
+    width: 250px;
+    height: 250px;
+}

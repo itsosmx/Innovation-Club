@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #0fafbb, #10259b);
+    font-family: 'Monsterrat', sans-serif;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(0, 89, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(56, 46, 27, 0.7);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hello {
+    color: #FFFFFF;
+}
+
+.garhi {
+    color: #000000;
+}
+
+header {
+    background-image: url(../img/hero-background.png);
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+header h1 {
+    color: #000000;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+header h2 {
+    clear: both;
+    color: #000000;
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px 10px 10px;
+}
+
+nav {
+    font-size: 1.25em;
+    float: right;
+    padding: 45px;
+}
+
+nav,
+ul,
+li {
+    display: inline-block;
+}
+
+hr {
+    font-size: large;
+    color: #E9B44C;
+    bottom: 20px;
+}
+
+ul,
+li,
+a {
+    color: #ffffff;
+    font-size: 1em;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.info {
+    color: #000000;
+}
+
+.light {
+    color: #fa7900;
+}
+
+p {
+    color: #FFFFFF;
+}
+
+#about {
+    background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+    box-shadow: 0 4px 8px 0 rgb(255, 51, 0), 0 6px 20px 0 rgb(255, 0, 0);
+    margin: 50px;
+    display: inline-block;
+    padding: 50px;
+    border-radius: 100px;
+    position: relative;
+    width: 600px
+}
+
+.track {
+    position: relative;
+    width: 100%;
+}
+
+.row h2 {
+    color: white;
+}
+
+.col-md-5 a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 30px;
+    text-align: center;
+    color: White;
+    margin-top: 30px;
+    font-size: 10px;
+    Transition: 0.3s linear;
+}
+
+.col-md-5 a:hover {
+    background-color: darkgray;
+}
+
+.about-content {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.skills h2 {
+    padding-top: 30px;
+}
+
+.skills p {
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.skills {
+    background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+    box-shadow: 0 4px 8px 0 rgb(255, 51, 0), 0 6px 20px 0 rgb(255, 0, 0);
+    margin: 50px;
+    display: inline-block;
+    padding: 50px;
+    border-radius: 100px;
+    position: relative;
+    width: 600px
+}
+
+.logo {
+    float: left;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    transition: 0.6s linear;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo:hover {
+    font-size: 25px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+}
+
+.title p {
+    color: #000000;
+}
+
+.line {
+    text-align: center;
+}
+
+hr {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    margin-top: 100px;
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer ul {
+    text-align: center;
+    margin-top: 0;
+    display: inline;
+}
+
+.footer ul li {
+    text-align: center;
+    text-align: -webkit-match-parent;
+    font-size: 25px;
+}
+
+.footer ul li a {
+    text-align: center;
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+/*--- footer----*/
+
+.footer ul li a i:hover {
+    text-align: center;
+    font-size: 30px;
+}
+
+.socials {
+    background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+    box-shadow: 0 4px 8px 0 rgb(255, 51, 0), 0 6px 20px 0 rgb(255, 0, 0);
+    margin: 50px;
+    padding: 50px;
+    border-radius: 100px;
+    position: relative;
+}
+
+.socials_Head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials_Head img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.Certificates {
+    box-shadow: 0 4px 8px 0 rgb(255, 51, 0), 0 6px 20px 0 rgb(255, 0, 0);
+    border-radius: 100px;
+    padding: 50px;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    margin-right: 50px;
+}
+
+.Certificates h2 {
+    padding-top: 30px;
+}
+
+.about-content p {
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.about-content h2 {
+    padding-top: 30px;
+}
+
+.border {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+h2 {
+    color: #FFFFFF;
+}
+
+p {
+    color: #000000;
+}
+
+.copy {
+    color: #FFFFFF;
+}
+
+.highlight {
+    color: #1100ff;
+}

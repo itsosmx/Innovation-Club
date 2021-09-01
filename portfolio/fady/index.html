@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>my Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #000000;
+            font-family: Montserrat, sans-serif;
+            margin: 0;
+        }
+        
+         ::-webkit-scrollbar {
+            width: 5px;
+            background-color: -webkit-linear-gradient(left, #61ff6e, #1dd68f);
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background-color: #61ff6e;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        h1 {
+            text-shadow: 2px 2px 9px #61ff6e;
+        }
+        
+        .hello {
+            color: #FFFFFF;
+        }
+        
+        .fady {
+            color: #FFFFFF;
+        }
+        
+        header {
+            background-image: url(../img/hero-background.png);
+            background-size: cover;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+        
+        header h1 {
+            color: #FFFFFF;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        
+        header h2 {
+            clear: both;
+            color: #FFFFFF;
+            font-family: 'Source Code Pro', monospace;
+            padding: 10px 10px 10px;
+        }
+        
+        nav {
+            font-size: 1.25em;
+            float: right;
+            padding: 45px;
+        }
+        
+        nav,
+        ul,
+        li {
+            display: inline-block;
+        }
+        
+        hr {
+            font-size: large;
+            color: #61ff6e;
+            bottom: 20px;
+        }
+        
+        ul,
+        li,
+        a {
+            color: #61ff6e;
+            font-size: 1em;
+            padding: 5px;
+            text-decoration: none;
+        }
+        
+        .info {
+            color: #FFFFFF;
+        }
+        
+        span {
+            color: #61ff6e;
+        }
+        
+        p {
+            color: #FFFFFF;
+        }
+        
+        #about {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff6e, 0 6px 20px 0 #61ff6e;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        .track {
+            position: relative;
+            width: 100%;
+        }
+        
+        .row h2 {
+            color: white;
+        }
+        
+        .col-md-5 a:hover {
+            background-color: darkgray;
+        }
+        
+        .about-content {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #61ff6e;
+        }
+        
+        .skills h2 {
+            padding-top: 30px;
+        }
+        
+        .skills p {
+            margin-top: 5px;
+            color: #61ff6e;
+        }
+        
+        .skills {
+            background-color: rgba(83, 83, 83, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff6e, 0 6px 20px 0 #61ff6e;
+            margin: 50px;
+            display: inline-block;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+            width: 600px
+        }
+        
+        hr {
+            color: white;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 100px;
+            height: 10vh;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .footer ul {
+            text-align: center;
+            margin-top: 0;
+            display: inline;
+        }
+        
+        .footer ul li {
+            text-align: center;
+            text-align: -webkit-match-parent;
+            font-size: 25px;
+        }
+        
+        .footer ul li a {
+            text-align: center;
+            color: rgb(253, 252, 252);
+            text-decoration: none;
+            background-color: transparent;
+            -webkit-text-decoration-skip: objects;
+        }
+        /*--- footer----*/
+        
+        .footer ul li a i:hover {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .socials {
+            background-color: rgba(81, 173, 161, 0.5) max-width 1200px;
+            box-shadow: 0 4px 8px 0 #61ff6e, 0 6px 20px 0 #61ff6e;
+            margin: 50px;
+            padding: 50px;
+            border-radius: 100px;
+            position: relative;
+        }
+        
+        .socials_Head {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .socials_Head img {
+            width: 330px;
+            height: 385px;
+            border-radius: 50%;
+        }
+        
+        .about-content p {
+            margin-top: 5px;
+            color: #61ff6e;
+        }
+        
+        .about-content h2 {
+            padding-top: 30px;
+        }
+        
+        .border {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        h2 {
+            color: #FFFFFF;
+        }
+        
+        .copy {
+            color: #FFFFFF;
+        }
+        
+        .My-Work {
+            box-shadow: 0 4px 8px 0 #61ff6e, 0 6px 20px 0 #61ff6e;
+            border-radius: 100px;
+            padding: 50px;
+            margin-top: 5px;
+            margin-right: 50px;
+        }
+        
+        .My-Work h2 {
+            padding-top: 30px;
+        }
+        
+        .My-Work_img {
+            margin-top: 20px;
+            display: flex;
+        }
+        
+        .My-Work_img img {
+            margin-left: 10px;
+            width: 210px;
+            height: 210px;
+        }
+        
+        .My-Work_img {
+            transition: all 1.2s ease-in-out;
+            -webkit-transition: all 1.2s ease-in-out;
+            -moz-transition: all 1.2s ease-in-out;
+            -ms-transition: all 1.2s ease-in-out;
+            -o-transition: all 1.2s ease-in-out;
+        }
+        
+        .My-Work_img:hover {
+            transform: rotate(360deg) scale(2, 2);
+            -webkit-transform: rotate(360deg) scale(2, 2);
+            -moz-transform: rotate(360deg) scale(2, 2);
+            -ms-transform: rotate(360deg) scale(2, 2);
+            -o-transform: rotate(360deg) scale(2, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>&lt; Fady Issac &verbar; Photographer &sol;&gt;</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#My-Work">My-Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <section id="welcome-section">
+        <h1>
+            <div class="hello">&nbsp;Hi there! I am</div>
+            <div class="fady">&nbsp;Fady <span class="highlight">&nbsp;Issac</span></div>
+        </h1>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Fady Issac student in NUB university(born in 8 july 2000). Obtained a high school diploma in 2020- egyptian-male- single.
+            </p>
+        </div>
+    </div>
+
+    <section class="content">
+        <div id="skills">
+            <div class="skills">
+                <h2>Skills</h2>
+                <p> Photographer very good ,I programing the computer in a good way. </p>
+
+                <ul class="track">
+                    <li>Photographer</li><br>
+                    <li>HTML</li><br>
+                    <li>CSS</li><br>
+                    <li>JAVA</li><br>
+
+                </ul>
+
+                <h2> Basic skills</h2>
+                <p>
+                    I am speaking English good <br> I am Speaking Arabic fluently <br> I am using computer skills very well
+                </p>
+            </div>
+        </div>
+        <div id="My-Work">
+            <div class="My-Work">
+
+                <h2>My-Work</h2><br>
+                <div class="My-Work_img">
+
+                    <p>
+                        <img target="_blank" src="./WhatsApp Image.jpeg" alt="">
+
+                        <img target="_blank" src="./WhatsApp Image 2021-08-01 at 9.23.00 PM.jpeg" alt="">
+
+                        <img target="_blank " src="./Innovation club.png " alt=" ">
+                    </p>
+                    <p>
+                        <img target="_blank src=" src="./IMG_9941.JPG " alt=" ">
+
+                        <img target="_blank " src="./IMG_9942.JPG " alt=" ">
+
+                        <img target="_blank " src="./IMG_9943.JPG " alt=" ">
+                    </p>
+                    <p>
+                        <img target="_blank " src="./IMG_9945.JPG " alt=" ">
+
+                        <img target="_blank " src="./IMG_9946.JPG " alt=" ">
+
+                        <img target="_blank" src="./WhatsApp Image 2021-08-01 at 9.22.06 PM.jpeg" alt="">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <footer>
+        <div id="Contact ">
+            <section id="Contact ">
+                <div class="socials ">
+                    <div class="socials_Head ">
+                        <h2>contact me</h2>
+                        <img src="./fady.jpeg " alt="fady ">
+                    </div>
+                    <div class="info ">
+                        elminya· Egypt · (+20) 01200435791 ·
+                        <span class="highlight ">fadyissac33@gmail.com</span>
+                    </div>
+                    <a href="https://www.facebook.com/fady.issac.39 " class="fa fa-facebook "></a>
+                    <a href="# " class="fa fa-google "></a>
+                    <a href="https://instagram.com/fo24photographer?r=nametag " class="fa fa-instagram "></a>
+                    <a href="https://www.facebook.com/profile.php?id=100047070383089 " class="fa fa-facebook "></a>
+                </div>
+
+                <div class="footer ">
+
+                    <ul>
+                        <li>
+
+                            <p class="copy " style="font-size: 20px; ">
+                                &copy; Copyright |💛 &nbsp; fady &nbsp; 💛&nbsp;
+                            </p>
+
+                        </li>
+
+                </div>
+        </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>
